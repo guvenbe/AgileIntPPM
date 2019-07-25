@@ -48,4 +48,3 @@ export default connect(
     mapStateToProps,
     { getProjects }
 )(Dashboard);
-

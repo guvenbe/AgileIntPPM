@@ -1,7 +1,7 @@
-import React, {Component} from "react";
-import {getProject, createProject} from "../../actions/projectActions";
+import React, { Component } from "react";
+import { getProject, createProject } from "../../actions/projectActions";
 import PropTypes from "prop-types";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 import classnames from "classnames";
 
 class UpdateProject extends Component {
@@ -22,11 +22,9 @@ class UpdateProject extends Component {
         this.onSubmit = this.onSubmit.bind(this);
     }
 
-
     componentWillReceiveProps(nextProps) {
-
         if (nextProps.errors) {
-            this.setState({errors: nextProps.errors})
+            this.setState({ errors: nextProps.errors });
         }
         const {
             id,
@@ -48,12 +46,12 @@ class UpdateProject extends Component {
     }
 
     componentDidMount() {
-        const {id} = this.props.match.params;
+        const { id } = this.props.match.params;
         this.props.getProject(id, this.props.history);
     }
 
     onChange(e) {
-        this.setState({[e.target.name]: e.target.value});
+        this.setState({ [e.target.name]: e.target.value });
     }
 
     onSubmit(e) {
@@ -72,33 +70,29 @@ class UpdateProject extends Component {
     }
 
     render() {
-        const {errors} = this.state;
+        const { errors } = this.state;
         return (
             <div className="project">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 m-auto">
                             <h5 className="display-4 text-center">Update Project form</h5>
-                            <hr/>
+                            <hr />
                             <form onSubmit={this.onSubmit}>
                                 <div className="form-group">
                                     <input
                                         type="text"
                                         className={classnames("form-control form-control-lg", {
                                             "is-invalid": errors.projectName
-
                                         })}
                                         placeholder="Project Name"
                                         name="projectName"
                                         value={this.state.projectName}
                                         onChange={this.onChange}
                                     />
-                                    {
-                                        errors.projectName && (
-                                            <div className="invalid-feedback">{errors.projectName}</div>
-
-                                        )
-                                    }
+                                    {errors.projectName && (
+                                        <div className="invalid-feedback">{errors.projectName}</div>
+                                    )}
                                 </div>
                                 <div className="form-group">
                                     <input
@@ -112,22 +106,18 @@ class UpdateProject extends Component {
                                     />
                                 </div>
                                 <div className="form-group">
-                                  <textarea
-                                      className={classnames("form-control form-control-lg", {
-                                          "is-invalid": errors.description
-
-                                      })}
-                                      placeholder="Project Description"
-                                      name="description"
-                                      onChange={this.onChange}
-                                      value={this.state.description}
-                                  />
-                                    {
-                                        errors.description && (
-                                            <div className="invalid-feedback">{errors.description}</div>
-
-                                        )
-                                    }
+                  <textarea
+                      className={classnames("form-control form-control-lg", {
+                          "is-invalid": errors.description
+                      })}
+                      placeholder="Project Description"
+                      name="description"
+                      onChange={this.onChange}
+                      value={this.state.description}
+                  />
+                                    {errors.description && (
+                                        <div className="invalid-feedback">{errors.description}</div>
+                                    )}
                                 </div>
                                 <h6>Start Date</h6>
                                 <div className="form-group">
@@ -177,5 +167,5 @@ const mapStateToProps = state => ({
 
 export default connect(
     mapStateToProps,
-    {getProject, createProject}
+    { getProject, createProject }
 )(UpdateProject);

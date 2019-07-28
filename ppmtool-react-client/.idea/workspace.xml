@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f02d2c0b-9deb-4282-86f6-dd9d38d67238" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/projectActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/projectActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Project/ProjectItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project/ProjectItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Project/UpdateProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project/UpdateProject.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/projectReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/projectReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -118,7 +116,7 @@
       <workItem from="1564199384408" duration="243000" />
       <workItem from="1564200171542" duration="793000" />
       <workItem from="1564202127886" duration="26000" />
-      <workItem from="1564202178355" duration="4009000" />
+      <workItem from="1564202178355" duration="9101000" />
     </task>
     <task id="LOCAL-00001" summary="Some last spring">
       <created>1562033485548</created>
@@ -176,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564041232933</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Still a bug">
+      <created>1564208877390</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564208877390</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

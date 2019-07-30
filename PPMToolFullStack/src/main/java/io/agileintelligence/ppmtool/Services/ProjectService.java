@@ -3,7 +3,7 @@ package io.agileintelligence.ppmtool.Services;
 import io.agileintelligence.ppmtool.domain.Backlog;
 import io.agileintelligence.ppmtool.domain.Project;
 import io.agileintelligence.ppmtool.exceptions.ProjectIdException;
-import io.agileintelligence.ppmtool.repositories.BackLogRepository;
+import io.agileintelligence.ppmtool.repositories.BacklogRepository;
 import io.agileintelligence.ppmtool.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +15,7 @@ public class ProjectService {
     private ProjectRepository projectRepository;
 
     @Autowired
-    private BackLogRepository backLogRepository;
+    private BacklogRepository backLogRepository;
 
 
 

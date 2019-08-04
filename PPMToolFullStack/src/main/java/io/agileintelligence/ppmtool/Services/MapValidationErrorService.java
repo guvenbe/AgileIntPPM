@@ -1,4 +1,4 @@
-package io.agileintelligence.ppmtool.web;
+package io.agileintelligence.ppmtool.Services;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +13,7 @@ import java.util.Map;
 @Service
 public class MapValidationErrorService {
 
-    public ResponseEntity<?> MapValidationErrorService(BindingResult result) {
+    public ResponseEntity<?> MapValidationService(BindingResult result) {
 
         if (result.hasErrors()) {
             java.util.Map<String, String> errorMap = new HashMap<>();

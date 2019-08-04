@@ -1,6 +1,7 @@
 package io.agileintelligence.ppmtool.web;
 
 
+import io.agileintelligence.ppmtool.Services.MapValidationErrorService;
 import io.agileintelligence.ppmtool.Services.ProjectService;
 import io.agileintelligence.ppmtool.domain.Project;
 import org.springframework.http.HttpStatus;
@@ -27,7 +28,7 @@ public class ProjectController {
     @PostMapping("")
     public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project, BindingResult result) {
 
-        ResponseEntity<?> errorMap = mapValidationErrorService.MapValidationErrorService(result);
+        ResponseEntity<?> errorMap = mapValidationErrorService.MapValidationService(result);
 
         if(errorMap != null) return errorMap;
 

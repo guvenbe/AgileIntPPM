@@ -11,14 +11,14 @@ public class ProjectTask {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(updatable =false)
+    @Column(updatable =false, unique = true)
     private String projectSequence;
     @NotBlank(message = "please include a project summary")
     private String summary;
     private String acceptanceCriteria;
     private String status;
     private Integer priority;
-    private Date duaDate;
+    private Date dueDate;
     @Column(updatable = false)
     private String projectIdentifier;
     private Date created_At;
@@ -81,12 +81,12 @@ public class ProjectTask {
         this.priority = priority;
     }
 
-    public Date getDuaDate() {
-        return duaDate;
+    public Date getDueDate() {
+        return dueDate;
     }
 
-    public void setDuaDate(Date duaDate) {
-        this.duaDate = duaDate;
+    public void setDueDate(Date dueDate) {
+        this.dueDate = dueDate;
     }
 
     public String getProjectIdentifier() {
@@ -140,7 +140,7 @@ public class ProjectTask {
                 ", acceptanceCriteria='" + acceptanceCriteria + '\'' +
                 ", status='" + status + '\'' +
                 ", priority=" + priority +
-                ", duaDate=" + duaDate +
+                ", duaDate=" + dueDate +
                 ", projectIdentifier='" + projectIdentifier + '\'' +
                 ", created_At=" + created_At +
                 ", updatedAt=" + updatedAt +

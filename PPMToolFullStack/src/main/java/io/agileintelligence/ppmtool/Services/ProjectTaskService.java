@@ -10,6 +10,8 @@ import io.agileintelligence.ppmtool.repositories.ProjectTaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProjectTaskService {
 
@@ -90,6 +92,21 @@ public class ProjectTaskService {
             throw new ProjectNotFoundException("Project task '" + pt_id + "' does not exist in project: '" + backlog_id  + "'");
         }
         return  projectTask;
+    }
+    // Update project task
+    public ProjectTask updateByProjectSequnce(ProjectTask updatedTask, String backlog_id, String pt_id){
+        ProjectTask projectTask = findPTByProjectSequence(backlog_id,pt_id);
+        projectTask = updatedTask;
+
+        return projectTaskRepository.save(projectTask);
+    }
+
+    public void deletePTByProjectSequence(String backlog_id, String pt_id){
+        ProjectTask projectTask = findPTByProjectSequence(backlog_id,pt_id);
+//        Backlog backlog = projectTask.getBacklog();
+//        List<ProjectTask> pts = backlog.getProjectTasks();
+//        pts.remove(projectTask);
+        projectTaskRepository.delete(projectTask);
     }
 
 }

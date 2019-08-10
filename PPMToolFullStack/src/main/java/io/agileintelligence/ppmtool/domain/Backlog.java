@@ -1,5 +1,6 @@
 package io.agileintelligence.ppmtool.domain;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
@@ -12,17 +13,21 @@ public class Backlog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Integer PTsequence=0;
+    private Integer PTSequence = 0;
     private String projectIdentifier;
 
     //OneToOne with project
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "project_id", nullable = false)
+    @JoinColumn(name="project_id",nullable = false)
     @JsonIgnore
     private Project project;
 
-    @OneToMany(cascade = CascadeType.REFRESH,fetch = FetchType.EAGER, mappedBy = "backlog", orphanRemoval = true)
-    private List<ProjectTask> projectTasks = new ArrayList <>();
+    //OneToMany projecttasks
+    @OneToMany(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER, mappedBy = "backlog", orphanRemoval = true)
+    private List<ProjectTask> projectTasks = new ArrayList<>();
+    //Cascade REFRESH
+    //ORPHAN REMOVAL
+
 
     public Backlog() {
     }
@@ -35,12 +40,12 @@ public class Backlog {
         this.id = id;
     }
 
-    public Integer getPTsequence() {
-        return PTsequence;
+    public Integer getPTSequence() {
+        return PTSequence;
     }
 
-    public void setPTsequence(Integer PTsequence) {
-        this.PTsequence = PTsequence;
+    public void setPTSequence(Integer PTSequence) {
+        this.PTSequence = PTSequence;
     }
 
     public String getProjectIdentifier() {
@@ -59,11 +64,11 @@ public class Backlog {
         this.project = project;
     }
 
-    public List <ProjectTask> getProjectTasks() {
+    public List<ProjectTask> getProjectTasks() {
         return projectTasks;
     }
 
-    public void setProjectTasks(List <ProjectTask> projectTasks) {
+    public void setProjectTasks(List<ProjectTask> projectTasks) {
         this.projectTasks = projectTasks;
     }
 }

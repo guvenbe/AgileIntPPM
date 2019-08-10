@@ -1,4 +1,4 @@
-package io.agileintelligence.ppmtool.Services;
+package io.agileintelligence.ppmtool.services;
 
 import io.agileintelligence.ppmtool.domain.Backlog;
 import io.agileintelligence.ppmtool.domain.Project;

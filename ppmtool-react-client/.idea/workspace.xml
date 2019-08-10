@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f02d2c0b-9deb-4282-86f6-dd9d38d67238" name="Default Changelist" comment="" />
+    <list default="true" id="f02d2c0b-9deb-4282-86f6-dd9d38d67238" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/Services/MapValidationErrorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/services/MapValidationErrorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/Services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/services/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/Services/ProjectTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/services/ProjectTaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/domain/Backlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/domain/Backlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/domain/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/domain/ProjectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/domain/ProjectTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/exceptions/ProjectIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/exceptions/ProjectIdException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/exceptions/ProjectIdExceptionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/exceptions/ProjectIdExceptionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/exceptions/ProjectNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/exceptions/ProjectNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/exceptions/ProjectNotFoundExceptionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/exceptions/ProjectNotFoundExceptionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/repositories/BacklogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/repositories/BacklogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/repositories/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/repositories/ProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/repositories/ProjectTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/repositories/ProjectTaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/web/BacklogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/web/BacklogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/web/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/src/main/java/io/agileintelligence/ppmtool/web/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/backlogActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/backlogActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/AddProjectTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/AddProjectTask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/backlogReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/backlogReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/errorReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/errorReducer.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,16 +34,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>start</find>
-      <find>projectform</find>
-      <find>Create a Project</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -40,6 +57,7 @@
   <component name="ProjectId" id="1OZzyThgcOrnRRgj6OEsWCOs7o3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -57,6 +75,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/ProjectBoard" />
+      <recent name="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks" />
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/Project" />
     </key>
@@ -73,12 +94,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.AddProjectTask.js">
+    <configuration name="ProjectBoard.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ppmtool-react-client/src/ProjectBoard.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectForm.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ppmtool-react-client/src/ProjectForm.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="AddProjectTask.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="AddProjectTask.js" working-dir="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks">
+      <method v="2" />
+    </configuration>
     <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="App.js" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.ProjectBoard.html" />
+      <item itemvalue="JavaScript Debug.ProjectForm.html" />
+      <item itemvalue="Node.js.AddProjectTask.js" />
+      <item itemvalue="Node.js.App.js" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.AddProjectTask.js" />
+        <item itemvalue="JavaScript Debug.ProjectForm.html" />
+        <item itemvalue="JavaScript Debug.ProjectBoard.html" />
+        <item itemvalue="JavaScript Debug.ProjectForm.html" />
         <item itemvalue="Node.js.App.js" />
       </list>
     </recent_temporary>
@@ -112,6 +152,13 @@
       <workItem from="1564200171542" duration="793000" />
       <workItem from="1564202127886" duration="26000" />
       <workItem from="1564202178355" duration="9703000" />
+      <workItem from="1564971077221" duration="3313000" />
+      <workItem from="1565057862502" duration="21877000" />
+      <workItem from="1565419814533" duration="691000" />
+      <workItem from="1565421658099" duration="92000" />
+      <workItem from="1565421763407" duration="6588000" />
+      <workItem from="1565466743775" duration="254000" />
+      <workItem from="1565467574983" duration="2803000" />
     </task>
     <task id="LOCAL-00001" summary="Some last spring">
       <created>1562033485548</created>
@@ -176,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564208877390</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Wirring up ProjectBoard and ProjectTasks">
+      <created>1565069139085</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1565069139085</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +257,7 @@
     <MESSAGE value="Got BootSrap syled pages up" />
     <MESSAGE value="Reducer redux installed with some init code" />
     <MESSAGE value="Still a bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Still a bug" />
+    <MESSAGE value="Wirring up ProjectBoard and ProjectTasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wirring up ProjectBoard and ProjectTasks" />
   </component>
 </project>

@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
-import {Link} from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class ProjectBoard extends Component {
     render() {
-        const {id} = this.props.match.params;
+        const { id } = this.props.match.params;
         return (
             <div className="container">
-                <Link to={`/addProjectTask/${id}`} href="" class="btn btn-primary mb-3">
+                <Link to={`/addProjectTask/${id}`} className="btn btn-primary mb-3">
                     <i className="fas fa-plus-circle"> Create Project Task</i>
                 </Link>
-                <br/>
-                <hr/>
+                <br />
+                <hr />
                 {
                     // <!-- Backlog STARTS HERE -->
                 }
@@ -26,7 +26,6 @@ class ProjectBoard extends Component {
                                 // <!-- SAMPLE PROJECT TASK STARTS HERE -->
                             }
                             <div className="card mb-1 bg-light">
-
                                 <div className="card-header text-primary">
                                     ID: projectSequence -- Priority: priorityString
                                 </div>
@@ -35,17 +34,16 @@ class ProjectBoard extends Component {
                                     <p className="card-text text-truncate ">
                                         project_task.acceptanceCriteria
                                     </p>
-                                    <a href="" class="btn btn-primary">
+                                    <a href="" className="btn btn-primary">
                                         View / Update
                                     </a>
 
-                                    <button className="btn btn-danger ml-4">
-                                        Delete
-                                    </button>
+                                    <button className="btn btn-danger ml-4">Delete</button>
                                 </div>
                             </div>
+
                             {
-                                // <!-- SAMPLE PROJECT TASK END HERE -->
+                                // <!-- SAMPLE PROJECT TASK ENDS HERE -->
                             }
                         </div>
                         <div className="col-md-4">
@@ -55,9 +53,8 @@ class ProjectBoard extends Component {
                                 </div>
                             </div>
                             {
-                                // <!-- SAMPLE PROJECT TASK STARTS HERE -->
-                                //
-                                // <!-- SAMPLE PROJECT TASK ENDS HERE -->
+                                //  <!-- SAMPLE PROJECT TASK STARTS HERE -->
+                                //         <!-- SAMPLE PROJECT TASK ENDS HERE -->
                             }
                         </div>
                         <div className="col-md-4">
@@ -68,16 +65,12 @@ class ProjectBoard extends Component {
                             </div>
                             {
                                 // <!-- SAMPLE PROJECT TASK STARTS HERE -->
-
                                 // <!-- SAMPLE PROJECT TASK ENDS HERE -->
                             }
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
         );
     }
 }

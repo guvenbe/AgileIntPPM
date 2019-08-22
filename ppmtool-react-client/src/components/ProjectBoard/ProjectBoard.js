@@ -34,17 +34,24 @@ class ProjectBoard extends Component {
 
     const boardAlgorithm = (errors, project_tasks) => {
       if (project_tasks.length < 1) {
+        //PROJECT IDENTIFIER BUG
         if (errors.projectNotFound) {
           return (
-            <div className="alert alert-danger text-center" role="alert">
-              {errors.projectNotFound}
-            </div>
+              <div className="alert alert-danger text-center" role="alert">
+                {errors.projectNotFound}
+              </div>
+          );
+        } else if (errors.projectIdentifier) {
+          return (
+              <div className="alert alert-danger text-center" role="alert">
+                {errors.projectIdentifier}
+              </div>
           );
         } else {
           return (
-            <div className="alert alert-info text-center" role="alert">
-              No Project Tasks on this board
-            </div>
+              <div className="alert alert-info text-center" role="alert">
+                No Project Tasks on this board
+              </div>
           );
         }
       } else {
@@ -55,14 +62,14 @@ class ProjectBoard extends Component {
     BoardContent = boardAlgorithm(errors, project_tasks);
 
     return (
-      <div className="container">
-        <Link to={`/addProjectTask/${id}`} className="btn btn-primary mb-3">
-          <i className="fas fa-plus-circle"> Create Project Task</i>
-        </Link>
-        <br />
-        <hr />
-        {BoardContent}
-      </div>
+        <div className="container">
+          <Link to={`/addProjectTask/${id}`} className="btn btn-primary mb-3">
+            <i className="fas fa-plus-circle"> Create Project Task</i>
+          </Link>
+          <br />
+          <hr />
+          {BoardContent}
+        </div>
     );
   }
 }
@@ -79,6 +86,6 @@ const mapStateToProps = state => ({
 });
 
 export default connect(
-  mapStateToProps,
-  { getBacklog }
+    mapStateToProps,
+    { getBacklog }
 )(ProjectBoard);
